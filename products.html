@@ -2,57 +2,49 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>產品比較｜保險對比資訊</title>
-  <meta name="description" content="公開比較熱門危疾及醫療產品資訊，透明展示保障亮點與用戶心得。">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family:'PingFang TC','Microsoft JhengHei',sans-serif; background:#f7f8fa; margin:0; }
-    nav { background:#1877ff;padding:18px 0; text-align:center; }
-    nav a { color:#fff;font-weight:bold;margin:0 18px;text-decoration:none;font-size:1.11em; transition:color .18s;}
-    nav a:hover { color:#ffce4a; }
-    .container { max-width:950px;margin:36px auto 0 auto;padding:0 18px; }
-    h1.header { text-align: center; }
-    .subtitle { color:#1977d2; font-size:1.16em;margin:15px 0 30px 0; text-align:center;}
-    .card-list {display:flex;flex-wrap:wrap;gap:26px;justify-content:center;}
-    .card {
-      background: #fff; border-radius: 13px; box-shadow:0 2.5px 10px #bdd7e040;
-      padding: 28px 22px; width: 370px; min-height:230px;
-      display: flex; flex-direction: column; justify-content: space-between;
-      margin-bottom:9px;
-      transition: box-shadow .21s;
-    }
-    .card:hover { box-shadow:0 8px 32px #1566af22; }
-    .insurer { font-weight: bold; color: #1977d2; font-size:1.12em; }
-    .score { font-size: 1.08em; color:#f7ab38; margin-bottom: 8px; }
-    .fea { margin:8px 0 10px 0; }
-    .remark { color: #556; font-size:0.98em; }
-    @media(max-width:740px){.card-list{flex-direction:column;align-items:center;}.card{width:97%;}}
-    @media(max-width:540px){.container{padding:0 5px;}}
+    @keyframes fade-in { from { opacity:0; transform:translateY(34px);} to { opacity:1; transform:translateY(0);} }
+    .animate-fade-in { animation: fade-in 1.1s cubic-bezier(.44,.66,.44,1) both;}
   </style>
 </head>
-<body>
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="products.html">產品比較</a>
-    <a href="faq.html">常見問題</a>
-    <a href="knowledge.html">知識教室</a>
-    <a href="compare.html">動態對比</a>
-    <a href="calculator.html">保費計算</a>
-    <a href="contact.html">聯絡我們</a>
-    <a href="about.html">關於本網</a>
-  </nav>
-  <div class="container">
-    <h1 class="header">產品比較</h1>
-    <div class="subtitle">多間公司熱門產品一覽，涵蓋危疾保與醫療保障重點</div>
-    <div class="card-list">
-      <div class="card">
-        <div class="insurer">產品A</div>
-        <div class="score">9.5 / 10</div>
-        <div class="fea"><b>特色：</b>多重危疾保障、醫療網絡、理賠彈性</div>
-        <div class="remark">用戶心得：理賠快、服務貼心。</div>
-      </div>
-      <!-- 其餘產品卡片... -->
+<body class="bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-400 min-h-screen">
+  <header class="bg-white/50 backdrop-blur-lg shadow-xl">
+    <div class="max-w-5xl mx-auto px-5 pt-10 pb-7 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold text-blue-900 drop-shadow-lg mb-1 tracking-wider animate-fade-in">產品比較</h1>
+      <div class="text-lg md:text-xl text-blue-600/80 font-semibold animate-fade-in" style="animation-delay:.13s">熱門公司保障方案卡片比較</div>
+      <nav class="flex flex-wrap justify-center gap-x-3 gap-y-2 mt-5 animate-fade-in" style="animation-delay:.24s">
+        <a href="index.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">首頁</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg font-bold text-cyan-700 bg-cyan-100 transition">產品比較</a>
+        <a href="faq.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">常見問題</a>
+        <a href="knowledge.html" class="px-4 py-2 rounded-lg font-bold text-purple-700 hover:bg-purple-100 transition">知識教室</a>
+        <a href="compare.html" class="px-4 py-2 rounded-lg font-bold text-cyan-700 hover:bg-cyan-100 transition">動態對比</a>
+        <a href="calculator.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">保費計算</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">聯絡我們</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg font-bold text-purple-700 hover:bg-purple-100 transition">關於本網</a>
+      </nav>
     </div>
-  </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-3 py-8 grid gap-8 md:grid-cols-2">
+    <!-- 多個產品卡片 -->
+    <section class="relative bg-white/50 backdrop-blur-xl border border-white/40 rounded-2xl shadow-2xl p-8 flex flex-col gap-2 animate-fade-in">
+      <div class="text-blue-700 font-bold text-lg md:text-xl mb-2">產品A</div>
+      <div class="text-yellow-500 font-bold text-lg">9.5 / 10</div>
+      <div class="text-blue-900 text-base"><span class="font-semibold hover:bg-blue-200 px-2 rounded cursor-pointer transition">特色：</span>多重危疾保障、醫療網絡、理賠彈性</div>
+      <div class="text-gray-700 text-sm">用戶心得：理賠快、服務貼心。</div>
+    </section>
+    <section class="relative bg-white/50 backdrop-blur-xl border border-white/40 rounded-2xl shadow-2xl p-8 flex flex-col gap-2 animate-fade-in" style="animation-delay:.12s;">
+      <div class="text-purple-700 font-bold text-lg md:text-xl mb-2">產品B</div>
+      <div class="text-yellow-500 font-bold text-lg">9.1 / 10</div>
+      <div class="text-blue-900 text-base"><span class="font-semibold hover:bg-purple-200 px-2 rounded cursor-pointer transition">特色：</span>附加重疾組合、全球覆蓋</div>
+      <div class="text-gray-700 text-sm">用戶心得：保障多元、理賠透明。</div>
+    </section>
+    <!-- 可繼續擴增 -->
+  </main>
+  <footer class="max-w-2xl mx-auto mb-7 bg-gradient-to-r from-cyan-300 to-purple-300 rounded-xl shadow-lg px-8 py-8 text-center mt-10">
+    <span class="text-blue-900 font-bold text-lg">如需個人化諮詢請 <a href="contact.html" class="underline hover:bg-purple-100 px-2 rounded transition">聯絡我們</a></span>
+  </footer>
 </body>
 </html>
