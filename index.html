@@ -3,72 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <title>保險對比資訊｜countto3</title>
-  <meta name="description" content="中立卡片化介面，快速瀏覽熱門保險方案，掌握危疾及醫療保障特色與用戶亮點心得。">
+  <meta name="description" content="即時掌握熱門危疾、醫療計劃資訊比對，重點特色精要剖析，簡易連結各主要功能分頁。">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
-    body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background: #f7f8fa; margin: 0; }
-    .container { max-width: 900px; margin: 32px auto; padding: 16px; }
+    body { font-family:'PingFang TC','Microsoft JhengHei',sans-serif; background:#f7f8fa; margin:0; }
+    nav { background:#1877ff;padding:18px 0; text-align:center; }
+    nav a { color:#fff; font-weight:bold; margin:0 18px; text-decoration:none; font-size:1.11em; transition:color .18s;}
+    nav a:hover { color:#ffce4a; }
+    .container { max-width:950px;margin:36px auto 0 auto;padding:0 18px; }
     .header { text-align: center; }
-    .card-list { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
-    .card {
-      background: #fff; border-radius: 14px; box-shadow:0 2px 8px #ccc2; padding: 28px 22px; width: 375px; min-height: 265px;
-      display: flex; flex-direction: column; justify-content: space-between;
+    .subtitle { color:#1977d2; font-size:1.19em;margin:12px 0 30px 0; text-align:center;}
+    .btn-group { text-align:center; margin-bottom:36px;}
+    .main-btn {
+      display:inline-block;background:#1977d2;color:#fff;
+      border:none;border-radius:8px;padding:15px 38px;margin:0 8px 10px 8px;
+      font-size:1.13em;cursor:pointer;font-weight:bold;box-shadow:0 2px 10px #1566af14;
+      transition:background .18s,box-shadow .18s;
+      text-decoration:none;
     }
-    .insurer { font-weight: bold; color: #1877ff; font-size: 1.2em; }
-    .score { font-size: 1.15em; color:#f7ab38; margin-top: 1px; }
-    .fea { margin: 6px 0 10px 0; }
-    .remark { color: #555; font-size:0.96em; }
-    @media (max-width: 700px){ .card-list{flex-direction:column;align-items:center;} .card{width:97%;}}
+    .main-btn:hover { background:#13529e; box-shadow:0 4px 18px #13448833; }
+    .card-list {display:flex;flex-wrap:wrap;gap:26px;justify-content:center;}
+    .card {
+      background: #fff; border-radius: 13px; box-shadow:0 2.5px 10px #bdd7e040;
+      padding: 28px 22px; width: 370px; min-height:230px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      margin-bottom:5px;
+      transition: box-shadow .21s;
+    }
+    .card:hover { box-shadow:0 8px 32px #1566af22; }
+    .insurer { font-weight: bold; color: #1977d2; font-size:1.12em; }
+    .score { font-size: 1.08em; color:#f7ab38; margin-bottom: 8px; }
+    .fea { margin:8px 0 10px 0; }
+    .remark { color: #556; font-size:0.98em; }
+    .cta {background:#eef6fe;border-radius:12px;padding:22px 26px;margin:37px auto 18px auto;text-align:center;max-width:650px;}
+    .cta span{color:#1977d2;font-size:1.07em;font-weight:bold;}
+    .cta a {background:#ffce4a;color:#285090;display:inline-block;border-radius:8px;padding:12px 36px;margin:12px 0 0 0;font-weight:bold;text-decoration:none;font-size:1.09em;}
+    .cta a:hover {background:#ffe594;}
+    @media(max-width:740px){.card-list{flex-direction:column;align-items:center;}.card{width:97%;}}
+    @media(max-width:540px){.container{padding:0 5px;}}
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="products.html">產品比較</a>
+    <a href="faq.html">常見問題</a>
+    <a href="knowledge.html">知識教室</a>
+    <a href="compare.html">動態對比</a>
+    <a href="calculator.html">保費計算</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="about.html">關於本網</a>
+  </nav>
   <div class="container">
     <h1 class="header">保險對比資訊</h1>
-    <h3>永明 vs 富衛｜熱門危疾 & 醫療保障重點一覽</h3>
+    <div class="subtitle">精選熱門危疾及醫療產品資訊｜簡明評分、重點亮點一目瞭然</div>
+    <div class="btn-group">
+      <a href="products.html" class="main-btn">查看所有產品對比</a>
+      <a href="faq.html" class="main-btn">常見問題</a>
+      <a href="contact.html" class="main-btn">即時查詢</a>
+    </div>
     <div class="card-list">
-      <!-- Sun Life Critical Illness -->
       <div class="card">
         <div class="insurer">永明 Sun Life</div>
         <div class="score">9.5 / 10</div>
         <div class="fea">
-          <b>代表產品：</b>萬家康卓越保／尊尚保<br>
-          <b>保障：</b>51項危疾、多重索償、保費豁免，可加現金增值功能<br>
-          <b>適合：</b>注重多重保障、家庭預算及靈活理賠要求人士
+          <b>保障範疇：</b>多重危疾保障、多次理賠、現金增值選項
         </div>
-        <div class="remark">用戶心得：理賠透明，國際支援完善，申請及查詢流程簡單。</div>
+        <div class="remark">用戶心得：彈性高、家庭適用、網上申請流程便捷。</div>
       </div>
-      <!-- FWD Critical Illness -->
       <div class="card">
         <div class="insurer">富衛 FWD</div>
         <div class="score">9.3 / 10</div>
         <div class="fea">
-          <b>代表產品：</b>危疾優易保系列、好易揀危疾<br>
-          <b>保障：</b>癌症、心臟、中風、原位癌，電子化核保流程，彈性附加
+          <b>保障範疇：</b>癌症、心臟病、中風等，彈性額外保障
         </div>
-        <div class="remark">用戶心得：審批快，彈性設計，用戶反饋普遍正面。</div>
+        <div class="remark">用戶心得：批核迅速，電子操作簡單，附加條款多。</div>
       </div>
-      <!-- Sun Life VHIS -->
       <div class="card">
         <div class="insurer">永明 Sun Life</div>
         <div class="score">9.2 / 10</div>
         <div class="fea">
-          <b>代表產品：</b>港卓越醫療／稱心醫療計劃<br>
-          <b>保障：</b>年度限額高，涵蓋癌症、手術、亞洲／全球醫療網絡
+          <b>保障範疇：</b>高額醫療保障、涵蓋家庭、亞洲／全球醫療網絡
         </div>
-        <div class="remark">用戶心得：家庭組合優惠多，理賠過程清晰、資訊充足。</div>
+        <div class="remark">用戶心得：理賠清晰，扣稅方便，親子家庭評價高。</div>
       </div>
-      <!-- FWD VHIS -->
       <div class="card">
         <div class="insurer">富衛 FWD</div>
         <div class="score">9.4 / 10</div>
         <div class="fea">
-          <b>代表產品：</b>倍衛您醫療計劃、醫家保、尊衛您<br>
-          <b>保障：</b>不限保障上限，家庭方案彈性多，附日間手術、現金津貼
+          <b>保障範疇：</b>全球無限額、現金津貼、家庭多人同步
         </div>
-        <div class="remark">用戶心得：電子服務便利，創新設計，家庭及年輕族群好評。</div>
+        <div class="remark">用戶心得：彈性組合，自助平台支援，照顧不同世代需要。</div>
       </div>
     </div>
-    <p style="text-align:center;margin-top:40px;">如需了解更多方案內容或自訂比較，歡迎瀏覽其他分頁或聯絡我們。</p>
+    <div class="cta">
+      <span>需要更詳細的比較、保費計算或追蹤最新資訊？</span><br>
+      <a href="contact.html">聯絡我們獲取個人化協助</a>
+    </div>
   </div>
 </body>
 </html>
