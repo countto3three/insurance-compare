@@ -2,20 +2,57 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>產品對比｜常見保險對比 countto3</title>
-  <meta name="description" content="以高質感卡片化介面比較香港熱門危疾、醫療產品的保障重點與專屬評論。">
+  <title>產品比較｜保險對比資訊</title>
+  <meta name="description" content="公開比較熱門危疾及醫療產品資訊，透明展示保障亮點與用戶心得。">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
-    body{font-family:'PingFang TC','Microsoft JhengHei',sans-serif;background:#f6fafc;margin:0;}
-    nav{background:#1877ff;padding:16px 0;text-align:center;}
-    nav a{color:#fff;font-weight:bold;margin:0 16px;text-decoration:none;}
-    .container{max-width:1080px;margin:38px auto;padding:12px;}
-    h1{color:#1877ff;text-align:center;}
-    .pb-list{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
-    .pb-card{
-      background:linear-gradient(108deg,#f8fbfd 60%,#e7f2fa 100%);
-      border-radius:14px;box-shadow:0 6px 18px #dae8ef44;
-      width:415px;min-height:252px;padding:28px 24px 22px 24px;
-      display:flex;flex-direction:column;justify-content:space-between;
-      margin-bottom:10px;transition:box-shadow .2s;}
-    .pb-card:hover {box-shadow:0 14px 28px #b4b4e144;border-top:3px solid
+    body { font-family:'PingFang TC','Microsoft JhengHei',sans-serif; background:#f7f8fa; margin:0; }
+    nav { background:#1877ff;padding:18px 0; text-align:center; }
+    nav a { color:#fff;font-weight:bold;margin:0 18px;text-decoration:none;font-size:1.11em; transition:color .18s;}
+    nav a:hover { color:#ffce4a; }
+    .container { max-width:950px;margin:36px auto 0 auto;padding:0 18px; }
+    h1.header { text-align: center; }
+    .subtitle { color:#1977d2; font-size:1.16em;margin:15px 0 30px 0; text-align:center;}
+    .card-list {display:flex;flex-wrap:wrap;gap:26px;justify-content:center;}
+    .card {
+      background: #fff; border-radius: 13px; box-shadow:0 2.5px 10px #bdd7e040;
+      padding: 28px 22px; width: 370px; min-height:230px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      margin-bottom:9px;
+      transition: box-shadow .21s;
+    }
+    .card:hover { box-shadow:0 8px 32px #1566af22; }
+    .insurer { font-weight: bold; color: #1977d2; font-size:1.12em; }
+    .score { font-size: 1.08em; color:#f7ab38; margin-bottom: 8px; }
+    .fea { margin:8px 0 10px 0; }
+    .remark { color: #556; font-size:0.98em; }
+    @media(max-width:740px){.card-list{flex-direction:column;align-items:center;}.card{width:97%;}}
+    @media(max-width:540px){.container{padding:0 5px;}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="products.html">產品比較</a>
+    <a href="faq.html">常見問題</a>
+    <a href="knowledge.html">知識教室</a>
+    <a href="compare.html">動態對比</a>
+    <a href="calculator.html">保費計算</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="about.html">關於本網</a>
+  </nav>
+  <div class="container">
+    <h1 class="header">產品比較</h1>
+    <div class="subtitle">多間公司熱門產品一覽，涵蓋危疾保與醫療保障重點</div>
+    <div class="card-list">
+      <div class="card">
+        <div class="insurer">產品A</div>
+        <div class="score">9.5 / 10</div>
+        <div class="fea"><b>特色：</b>多重危疾保障、醫療網絡、理賠彈性</div>
+        <div class="remark">用戶心得：理賠快、服務貼心。</div>
+      </div>
+      <!-- 其餘產品卡片... -->
+    </div>
+  </div>
+</body>
+</html>
