@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>保費簡易計算器｜countto3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body{font-family:'PingFang TC','Microsoft JhengHei',sans-serif;background:#f7f8fa;margin:0;}
+    .container{max-width:520px;margin:32px auto 0 auto;padding:18px 15px;background:#fff;border-radius:12px;box-shadow:0 2px 8px #ccc2;}
+    h1{color:#1877ff;text-align:center;}
+    label{font-weight:bold;}
+    input,select{padding:7px 6px;margin:5px 0 14px 0;border:1px solid #ccc;border-radius:5px;width:100%;}
+    button{background:#1877ff;color:#fff;padding:7px 16px;border-radius:6px;border:none;font-weight:bold;}
+    #result{margin-top:20px;font-size:1.07em;font-weight:bold;color:#0a7;}
+  </style>
+  <script>
+    function calcPremium() {
+      var age = parseInt(document.getElementById('age').value, 10);
+      var type = document.getElementById('type').value;
+      var base = (type=='critical') ? 800 : 400;
+      var premium = Math.round(base + age * ((type=='critical') ? 33 : 22));
+      document.getElementById('result').innerText = '預估年保費：約 HK$ '+premium+' 元（僅供參考）';
+    }
+  </script>
+</head>
+<body>
+  <nav style="background:#1877ff;padding:16px 0;text-align:center;">
+    <a href="index.html" style="color:#fff;font-weight:bold;margin:0 16px;">首頁</a>
+    <a href="products.html" style="color:#fff;margin:0 16px;">產品比較</a>
+    <a href="calculator.html" style="color:#fff;margin:0 16px;">保費計算器</a>
+    <a href="faq.html" style="color:#fff;margin:0 16px;">常見問題</a>
+    <a href="about.html" style="color:#fff;margin:0 16px;">關於我們</a>
+    <a href="contact.html" style="color:#fff;margin:0 16px;">聯絡我們</a>
+  </nav>
+  <div class="container">
+    <h1>保費簡易計算器</h1>
+    <label>年齡：</label>
+    <input type="number" id="age" min="0" max="80" value="30">
+    <label>產品類型：</label>
+    <select id="type">
+      <option value="critical">危疾保</option>
+      <option value="vhis">自願醫保</option>
+    </select>
+    <button onclick="calcPremium()">計算預估保費</button>
+    <div id="result"></div>
+  </div>
+</body>
+</html>
