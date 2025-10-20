@@ -2,38 +2,24 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>保險知識教室｜countto3</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知識教室｜保險對比資訊</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body{font-family:'PingFang TC','Microsoft JhengHei',sans-serif;background:#f7f8fa;margin:0;}
-    .container{max-width:900px;margin:32px auto;padding:16px;background:#fff;border-radius:10px;box-shadow:0 2px 8px #ccc2;}
-    h1{color:#1877ff;}
-    .section{margin:26px 0;}
-    .topic{font-weight:bold;color:#1657c2;margin-bottom:7px;font-size:1.08em;}
-    .desc{margin-bottom:13px;}
+    @keyframes fade-in { from { opacity:0; transform:translateY(34px);} to { opacity:1; transform:translateY(0);} }
+    .animate-fade-in { animation: fade-in 1.1s cubic-bezier(.44,.66,.44,1) both;}
   </style>
 </head>
-<body>
-  <nav style="background:#1877ff;padding:16px 0;text-align:center;">
-    <a href="index.html" style="color:#fff;font-weight:bold;margin:0 16px;">首頁</a>
-    <a href="products.html" style="color:#fff;margin:0 16px;">產品比較</a>
-    <a href="faq.html" style="color:#fff;margin:0 16px;">常見問題</a>
-    <a href="knowledge.html" style="color:#fff;margin:0 16px;">知識教室</a>
-    <a href="about.html" style="color:#fff;margin:0 16px;">關於我們</a>
-    <a href="contact.html" style="color:#fff;margin:0 16px;">聯絡我們</a>
-  </nav>
-  <div class="container">
-    <h1>保險知識教室</h1>
-    <div class="section">
-      <div class="topic">什麼是危疾保？</div>
-      <div class="desc">危疾保險主要針對癌症、心臟病、中風等重大疾病發生時提供一次性或分期賠償，減輕患者經濟壓力，提高康復機會。</div>
-      <div class="topic">什麼是自願醫保 VHIS？</div>
-      <div class="desc">自願醫保是政府認可的個人醫療保險計劃，投保者可獲稅務扣減、無論任何職業皆可申請，涵蓋住院手術、癌症治療等項目。</div>
-      <div class="topic">理賠及免責期</div>
-      <div class="desc">購買後一般設有90日或180日免責期，生效後如屬首次投保可全額賠付；重複索償型產品則可多次賠償。</div>
-      <div class="topic">如何選擇最合適產品？</div>
-      <div class="desc">建議根據年齡、家庭狀況、既往病歷及預算綜合考慮，建議選擇信譽佳、理賠透明、有全球醫療覆蓋的保險公司。</div>
-    </div>
-  </div>
-</body>
-</html>
+<body class="bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-400 min-h-screen">
+  <header class="bg-white/50 backdrop-blur-lg shadow-xl">
+    <div class="max-w-5xl mx-auto px-5 pt-10 pb-7 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold text-blue-900 drop-shadow-lg mb-1 tracking-wider animate-fade-in">知識教室</h1>
+      <nav class="flex flex-wrap justify-center gap-x-3 gap-y-2 mt-5 animate-fade-in" style="animation-delay:.16s">
+        <a href="index.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">首頁</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg font-bold text-cyan-700 hover:bg-cyan-100 transition">產品比較</a>
+        <a href="faq.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">常見問題</a>
+        <a href="knowledge.html" class="px-4 py-2 rounded-lg font-bold text-purple-700 bg-purple-100 transition">知識教室</a>
+        <a href="compare.html" class="px-4 py-2 rounded-lg font-bold text-cyan-700 hover:bg-cyan-100 transition">動態對比</a>
+        <a href="calculator.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">保費計算</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">聯絡我們</a>
+        <a href="about.html" class="px-4 py-2 rounded
