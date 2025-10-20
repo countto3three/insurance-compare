@@ -1,151 +1,81 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10Life - 保險比較平台</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #00a3e0;
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-        nav a:hover {
-            opacity: 0.8;
-        }
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #00a3e0;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #0082b3;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        .feature-card h3 {
-            color: #00a3e0;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 60px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>常見保險對比｜countto3</title>
+  <meta name="description" content="用清楚明快的卡片設計，快速比較香港主流危疾及醫療保險產品，一站式掌握保障優點。">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background: #f7f8fa; margin: 0; }
+    .container { max-width: 900px; margin: 32px auto; padding: 16px; }
+    .header { text-align: center; }
+    .card-list { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .card {
+      background: #fff; border-radius: 14px; box-shadow:0 2px 8px #ccc2; padding: 28px 22px; width: 375px; min-height: 265px;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .insurer { font-weight: bold; color: #1877ff; font-size: 1.12em; }
+    .score { font-size: 1.08em; color:#f7ab38; margin-top: 1px; }
+    .fea { margin: 6px 0 10px 0; }
+    .remark { color: #555; font-size:0.96em; }
+    @media (max-width: 700px){ .card-list{flex-direction:column;align-items:center;} .card{width:97%;}}
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">10Life</div>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="products.html">產品比較</a></li>
-                <li><a href="faq.html">常見問題</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>智慧保險比較平台</h1>
-        <p>比較香港市場上的危疾保險和自願醫保計劃，找到最適合您的保障</p>
-        <a href="products.html" class="btn">立即比較</a>
-    </section>
-
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 20px;">為什麼選擇10Life？</h2>
-        <div class="features">
-            <div class="feature-card">
-                <h3>📊 全面比較</h3>
-                <p>涵蓋市場上主要的危疾保險和自願醫保計劃，提供詳細的保障範圍和保費比較。</p>
-            </div>
-            <div class="feature-card">
-                <h3>🔍 透明資訊</h3>
-                <p>客觀、獨立的評估和分析，讓您清楚了解每個保險計劃的優缺點。</p>
-            </div>
-            <div class="feature-card">
-                <h3>💡 專業建議</h3>
-                <p>根據您的需求和預算，為您推薦最合適的保險方案。</p>
-            </div>
+  <nav style="background:#1877ff;padding:16px 0;text-align:center;">
+    <a href="index.html" style="color:#fff;font-weight:bold;margin:0 16px;">首頁</a>
+    <a href="products.html" style="color:#fff;margin:0 16px;">全面產品比較</a>
+    <a href="faq.html" style="color:#fff;margin:0 16px;">常見問題</a>
+    <a href="knowledge.html" style="color:#fff;margin:0 16px;">知識教室</a>
+    <a href="calculator.html" style="color:#fff;margin:0 16px;">保費計算器</a>
+    <a href="compare.html" style="color:#fff;margin:0 16px;">動態對比</a>
+    <a href="contact.html" style="color:#fff;margin:0 16px;">聯絡我們</a>
+    <a href="about.html" style="color:#fff;margin:0 16px;">關於我們</a>
+  </nav>
+  <div class="container">
+    <h1 class="header">常見保險對比</h1>
+    <h3>香港主流危疾及醫療保障產品一覽</h3>
+    <div class="card-list">
+      <div class="card">
+        <div class="insurer">永明 Sun Life</div>
+        <div class="score">評分：9.5 / 10</div>
+        <div class="fea">
+          <b>熱門計劃：</b>卓越危疾保險／尊尚危疾<br>
+          <b>保障重點：</b>全面涵蓋多種重疾，支援多次賠償，靈活保費設計<br>
+          <b>適合對象：</b>注重多重保障、家庭規劃人士
         </div>
+        <div class="remark">評語：理賠彈性，網上客戶服務佳，信譽良好</div>
+      </div>
+      <div class="card">
+        <div class="insurer">富衛 FWD</div>
+        <div class="score">評分：9.3 / 10</div>
+        <div class="fea">
+          <b>熱門計劃：</b>危疾優易保／好易揀<br>
+          <b>保障重點：</b>癌症、心臟病、中風及原位癌適用，電子申請方便
+        </div>
+        <div class="remark">評語：即時批核，隨時網上查詢，客戶口碑好</div>
+      </div>
+      <div class="card">
+        <div class="insurer">永明 Sun Life</div>
+        <div class="score">評分：9.2 / 10</div>
+        <div class="fea">
+          <b>熱門計劃：</b>卓越自願醫保／健康醫療保<br>
+          <b>保障重點：</b>高額年度限額，涵蓋癌症、手術，家庭保障選項完備
+        </div>
+        <div class="remark">評語：靈活保障層級，支援家庭成員投保</div>
+      </div>
+      <div class="card">
+        <div class="insurer">富衛 FWD</div>
+        <div class="score">評分：9.4 / 10</div>
+        <div class="fea">
+          <b>熱門計劃：</b>倍衛您醫療、醫家保、尊衛您<br>
+          <b>保障重點：</b>全球無年限額，現金保障彈性高，家庭方案便利
+        </div>
+        <div class="remark">評語：創新服務，數碼投保及預約齊全</div>
+      </div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 10Life Insurance Compare. 版權所有。</p>
-    </footer>
+    <p style="text-align:center;margin-top:40px;">如需更多個人化建議，歡迎聯絡我們～</p>
+  </div>
 </body>
 </html>
+
