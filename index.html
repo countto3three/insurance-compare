@@ -2,80 +2,86 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>常見保險對比｜countto3</title>
-  <meta name="description" content="用清楚明快的卡片設計，快速比較香港主流危疾及醫療保險產品，一站式掌握保障優點。">
+  <title>常見保險對比 | countto3</title>
+  <meta name="description" content="卡片化介面設計，快速閱覽主流危疾及醫療產品重點及評語。">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
     body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background: #f7f8fa; margin: 0; }
-    .container { max-width: 900px; margin: 32px auto; padding: 16px; }
-    .header { text-align: center; }
+    nav { background:#1877ff;padding:16px 0;text-align:center; }
+    nav a { color:#fff;font-weight:bold;margin:0 16px;text-decoration:none; }
+    .container { max-width:900px;margin:32px auto;padding:16px; }
+    .header { text-align:center; margin-bottom:24px; }
     .card-list { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
     .card {
-      background: #fff; border-radius: 14px; box-shadow:0 2px 8px #ccc2; padding: 28px 22px; width: 375px; min-height: 265px;
-      display: flex; flex-direction: column; justify-content: space-between;
+      background: linear-gradient(135deg,#f5fcff 0%,#ecf8fa 100%);
+      border-radius: 14px; box-shadow: 0 6px 18px #dae8ef44;
+      padding: 30px 22px; width: 370px; min-height:240px;
+      display:flex; flex-direction:column; justify-content:space-between;
+      transition: box-shadow .2s;
     }
-    .insurer { font-weight: bold; color: #1877ff; font-size: 1.12em; }
-    .score { font-size: 1.08em; color:#f7ab38; margin-top: 1px; }
-    .fea { margin: 6px 0 10px 0; }
-    .remark { color: #555; font-size:0.96em; }
-    @media (max-width: 700px){ .card-list{flex-direction:column;align-items:center;} .card{width:97%;}}
+    .card:hover { box-shadow:0 10px 36px #b5cfd755;}
+    .insurer { font-weight: bold; color: #1877ff; font-size: 1.22em; margin-bottom: 10px;}
+    .score { font-size: 1.14em; color:#f7ab38; margin-bottom: 7px; }
+    .fea { margin: 6px 0 12px 0; color:#387;}
+    .fea b { color:#1657c2;}
+    .remark { color: #555; font-size:0.97em; padding:8px 0 0 0;}
+    @media (max-width:700px){.card-list{flex-direction:column;align-items:center;} .card{width:97%;}}
   </style>
 </head>
 <body>
-  <nav style="background:#1877ff;padding:16px 0;text-align:center;">
-    <a href="index.html" style="color:#fff;font-weight:bold;margin:0 16px;">首頁</a>
-    <a href="products.html" style="color:#fff;margin:0 16px;">全面產品比較</a>
-    <a href="faq.html" style="color:#fff;margin:0 16px;">常見問題</a>
-    <a href="knowledge.html" style="color:#fff;margin:0 16px;">知識教室</a>
-    <a href="calculator.html" style="color:#fff;margin:0 16px;">保費計算器</a>
-    <a href="compare.html" style="color:#fff;margin:0 16px;">動態對比</a>
-    <a href="contact.html" style="color:#fff;margin:0 16px;">聯絡我們</a>
-    <a href="about.html" style="color:#fff;margin:0 16px;">關於我們</a>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="products.html">產品比較</a>
+    <a href="faq.html">常見問題</a>
+    <a href="knowledge.html">知識教室</a>
+    <a href="compare.html">動態對比</a>
+    <a href="calculator.html">保費計算</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="about.html">平台簡介</a>
   </nav>
   <div class="container">
-    <h1 class="header">常見保險對比</h1>
-    <h3>香港主流危疾及醫療保障產品一覽</h3>
+    <h1 class="header">常見保險產品卡片對比</h1>
     <div class="card-list">
       <div class="card">
         <div class="insurer">永明 Sun Life</div>
         <div class="score">評分：9.5 / 10</div>
         <div class="fea">
           <b>熱門計劃：</b>卓越危疾保險／尊尚危疾<br>
-          <b>保障重點：</b>全面涵蓋多種重疾，支援多次賠償，靈活保費設計<br>
-          <b>適合對象：</b>注重多重保障、家庭規劃人士
+          <b>特色：</b>多次危疾賠償、全球醫療康復支援、家庭方案
         </div>
-        <div class="remark">評語：理賠彈性，網上客戶服務佳，信譽良好</div>
+        <div class="remark">評語：理賠彈性大，支援線上申請，客戶口碑佳。</div>
       </div>
       <div class="card">
         <div class="insurer">富衛 FWD</div>
         <div class="score">評分：9.3 / 10</div>
         <div class="fea">
           <b>熱門計劃：</b>危疾優易保／好易揀<br>
-          <b>保障重點：</b>癌症、心臟病、中風及原位癌適用，電子申請方便
+          <b>特色：</b>多類危疾保障、即時批核、電子申請方便
         </div>
-        <div class="remark">評語：即時批核，隨時網上查詢，客戶口碑好</div>
+        <div class="remark">評語：申請流程簡單，彈性保障，評分高。</div>
       </div>
       <div class="card">
         <div class="insurer">永明 Sun Life</div>
         <div class="score">評分：9.2 / 10</div>
         <div class="fea">
           <b>熱門計劃：</b>卓越自願醫保／健康醫療保<br>
-          <b>保障重點：</b>高額年度限額，涵蓋癌症、手術，家庭保障選項完備
+          <b>特色：</b>高年度限額、涵蓋重症、照顧家庭
         </div>
-        <div class="remark">評語：靈活保障層級，支援家庭成員投保</div>
+        <div class="remark">評語：保障層級清晰，投保靈活。</div>
       </div>
       <div class="card">
         <div class="insurer">富衛 FWD</div>
         <div class="score">評分：9.4 / 10</div>
         <div class="fea">
           <b>熱門計劃：</b>倍衛您醫療、醫家保、尊衛您<br>
-          <b>保障重點：</b>全球無年限額，現金保障彈性高，家庭方案便利
+          <b>特色：</b>不限年度限額、家庭方案便利、現金津貼
         </div>
-        <div class="remark">評語：創新服務，數碼投保及預約齊全</div>
+        <div class="remark">評語：創新功能，數碼服務領先。</div>
       </div>
     </div>
-    <p style="text-align:center;margin-top:40px;">如需更多個人化建議，歡迎聯絡我們～</p>
+    <p style="text-align:center;margin-top:38px;font-size:1.07em;">
+      想了解更多個人化方案或保障細節？<br>歡迎直接聯絡我們！
+    </p>
   </div>
 </body>
 </html>
-
