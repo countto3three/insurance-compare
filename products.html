@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品比較 - 10Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #00a3e0;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #00a3e0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .product-section {
+            margin-bottom: 60px;
+        }
+        .product-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00a3e0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        .product-card:hover {
+            border-color: #00a3e0;
+            box-shadow: 0 5px 15px rgba(0,163,224,0.2);
+            transform: translateY(-3px);
+        }
+        .product-card h3 {
+            color: #00a3e0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .product-card .company {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .product-card .features {
+            margin: 15px 0;
+        }
+        .product-card .features li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .product-card .features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00a3e0;
+            font-weight: bold;
+        }
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">10Life</div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="products.html">產品比較</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>保險產品比較</h1>
+        
+        <div class="product-section">
+            <h2>💔 危疾保險</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>全面守護危疾保</h3>
+                    <div class="company">友邦保險</div>
+                    <ul class="features">
+                        <li>涵蓋120種嚴重疾病</li>
+                        <li>多次索償保障</li>
+                        <li>早期疾病额外賽償</li>
+                        <li>無須等候期</li>
+                    </ul>
+                    <div class="price">每月 HK$850 起</div>
+                </div>
+                
+                <div class="product-card">
+                    <h3>卓越健康保</h3>
+                    <div class="company">保誠保險</div>
+                    <ul class="features">
+                        <li>涵蓋85種嚴重疾病</li>
+                        <li>特別疾病加顧保障</li>
+                        <li>免体檢限額較高</li>
+                        <li>全球保障</li>
+                    </ul>
+                    <div class="price">每月 HK$720 起</div>
+                </div>
+                
+                <div class="product-card">
+                    <h3>智選危疾護衞計劃</h3>
+                    <div class="company">安盛保險</div>
+                    <ul class="features">
+                        <li>涵蓋100種嚴重疾病</li>
+                        <li>獲賺可以增加保障</li>
+                        <li>未索償可累積保障</li>
+                        <li>適合年輕人士</li>
+                    </ul>
+                    <div class="price">每月 HK$650 起</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-section">
+            <h2>🏥 自願醫保計劃 (VHIS)</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>高端醫療保障計劃</h3>
+                    <div class="company">宏利保險</div>
+                    <ul class="features">
+                        <li>年度保障限額 HK$1,000萬</li>
+                        <li>私家醫院自主選擇</li>
+                        <li>不設終身保障限額</li>
+                        <li>涵蓋先天疾病</li>
+                    </ul>
+                    <div class="price">每月 HK$1,200 起</div>
+                </div>
+                
+                <div class="product-card">
+                    <h3>標準醫保計劃</h3>
+                    <div class="company">中國人壽</div>
+                    <ul class="features">
+                        <li>年度保障限額 HK$420萬</li>
+                        <li>符合政府標準</li>
+                        <li>可申請稅務扣除</li>
+                        <li>保障穩定可靠</li>
+                    </ul>
+                    <div class="price">每月 HK$680 起</div>
+                </div>
+                
+                <div class="product-card">
+                    <h3>專業醫療精選計劃</h3>
+                    <div class="company">忽利洲保險</div>
+                    <ul class="features">
+                        <li>年度保障限額 HK$800萬</li>
+                        <li>日間手術也有保障</li>
+                        <li>中西醫診症涵蓋</li>
+                        <li>持續保障至100歲</li>
+                    </ul>
+                    <div class="price">每月 HK$950 起</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 10Life Insurance Compare. 版權所有。</p>
+    </footer>
+</body>
+</html>
