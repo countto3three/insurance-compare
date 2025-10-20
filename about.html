@@ -2,37 +2,42 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>關於我們｜常見保險對比 countto3</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於本網｜保險對比資訊</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body{font-family:'PingFang TC','Microsoft JhengHei',sans-serif;background:#f7f8fa;margin:0;}
-    .container{max-width:800px;margin:32px auto;padding:28px;background:#fff;border-radius:10px;box-shadow:0 2px 8px #ccc2;}
-    h1{color:#1877ff;}
-    .intro{margin:20px 0 18px 0;}
+    @keyframes fade-in { from { opacity:0; transform:translateY(34px);} to { opacity:1; transform:translateY(0);} }
+    .animate-fade-in { animation: fade-in 1.1s cubic-bezier(.44,.66,.44,1) both;}
   </style>
 </head>
-<body>
-  <nav style="background:#1877ff;padding:16px 0;text-align:center;">
-    <a href="index.html" style="color:#fff;font-weight:bold;margin:0 16px;">首頁</a>
-    <a href="products.html" style="color:#fff;margin:0 16px;">全面產品比較</a>
-    <a href="faq.html" style="color:#fff;margin:0 16px;">常見問題</a>
-    <a href="knowledge.html" style="color:#fff;margin:0 16px;">知識教室</a>
-    <a href="calculator.html" style="color:#fff;margin:0 16px;">保費計算器</a>
-    <a href="compare.html" style="color:#fff;margin:0 16px;">動態對比</a>
-    <a href="contact.html" style="color:#fff;margin:0 16px;">聯絡我們</a>
-    <a href="about.html" style="color:#fff;margin:0 16px;">關於我們</a>
-  </nav>
-  <div class="container">
-    <h1>關於我們</h1>
-    <div class="intro">
-      「常見保險對比」平台專注為香港市民整理最受歡迎的危疾及醫療保險資訊，以簡潔易明的方式介紹主要保險產品特色，協助用戶作出適合自己的選擇。
+<body class="bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-400 min-h-screen">
+  <header class="bg-white/50 backdrop-blur-lg shadow-xl">
+    <div class="max-w-5xl mx-auto px-5 pt-10 pb-7 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold text-blue-900 drop-shadow-lg mb-1 tracking-wider animate-fade-in">關於本網</h1>
+      <nav class="flex flex-wrap justify-center gap-x-3 gap-y-2 mt-5 animate-fade-in" style="animation-delay:.16s">
+        <a href="index.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">首頁</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg font-bold text-purple-700 bg-purple-100 transition">關於本網</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg font-bold text-cyan-700 hover:bg-cyan-100 transition">產品比較</a>
+        <a href="faq.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">常見問題</a>
+        <a href="knowledge.html" class="px-4 py-2 rounded-lg font-bold text-purple-700 hover:bg-purple-100 transition">知識教室</a>
+        <a href="calculator.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">保費計算</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg font-bold text-blue-700 hover:bg-blue-100 transition">聯絡我們</a>
+      </nav>
     </div>
-    <ul>
-      <li>一站式透明比較不同公司熱賣計劃</li>
-      <li>提供家庭、個人及長者適用的客觀資訊</li>
-      <li>不定期更新常見疑問與新產品亮點</li>
-    </ul>
-    <p style="margin-top:36px;">如需合作／查詢，歡迎聯絡我們！</p>
-  </div>
+  </header>
+  <main class="max-w-3xl mx-auto px-3 py-12">
+    <div class="bg-white/60 backdrop-blur-xl shadow-xl rounded-xl p-8 animate-fade-in">
+      <div class="font-bold text-blue-700 text-xl mb-4">關於「保險對比資訊」</div>
+      <p class="mb-4 text-gray-800">
+        本網站專注為香港市民與網民，整理最常見、最熱門的危疾與醫療保險資訊，讓你能用最透明、中立、清新的介面比對多家保險方案，資訊更新力求簡明。
+      </p>
+      <ul class="list-disc ml-5 mb-3 text-blue-900">
+        <li>整合主流危疾／醫療產品數據，每週更新內容</li>
+        <li>只談產品條款與用戶體驗、不評論銷售與推薦</li>
+        <li>適合保險新手、需求明確的購買者、家庭規劃參考</li>
+      </ul>
+      <p class="text-gray-600 mt-1">如有合作或內容建議，歡迎 <a href="contact.html" class="text-cyan-700 font-semibold underline hover:bg-cyan-100 rounded transition">聯絡我們</a>！</p>
+    </div>
+  </main>
 </body>
 </html>
